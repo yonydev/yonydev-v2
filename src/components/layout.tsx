@@ -9,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "../css/globals.css"
 
 interface ILayout {
   children: React.ReactNode;
@@ -38,7 +38,7 @@ const Layout = ({ children }: ILayout) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer className="bg-red-700">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
