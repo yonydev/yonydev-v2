@@ -1,0 +1,14 @@
+// Small Devices
+@media(min-width: $breakpoint-sm) {
+  .container { max-width: 640px; }
+}
+
+// Medium Devices
+@media(min-wirh: $breakpoint-md) {
+  .container { max-width: 768px; }
+}
+
+// Large devices
+@media(min-width: $breakpoint-lg) {
+  .container { max-width: 1024px; }
+}

@@ -17,7 +17,7 @@ class Container extends React.PureComponent<IContainer, {}> {
     const classes = classNames( "px-4" ,className, isFluid);
 
     return (
-      <div className={classes}>{children}</div>
+      <div className={`container ${classes}`}>{children}</div>
     )
   }
 
