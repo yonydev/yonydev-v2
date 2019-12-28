@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/globals.scss"
+import "../scss/index.scss"
 
 
 const withBaseLayout = (Page: any) => {
