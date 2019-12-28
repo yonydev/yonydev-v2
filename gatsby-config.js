@@ -9,6 +9,16 @@ module.exports = {
     "gatsby-plugin-typescript",
     "gatsby-plugin-postcss",
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          urls: [
+            "https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:300,400,500,700,900&display=swap"
+          ],
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -29,6 +39,7 @@ module.exports = {
         icon: "src/images/gatsby-icon.png", // This path is relative to the root of the site.
       },
     },
+    
     {
       resolve: "gatsby-plugin-sass",
       options: {
