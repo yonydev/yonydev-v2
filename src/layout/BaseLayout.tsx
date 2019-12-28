@@ -1,4 +1,6 @@
 import React from "react";
+import "../scss/globals.scss"
+
 
 const withBaseLayout = (Page: any) => {
   return class extends React.Component<{}, {}> {
@@ -6,7 +8,6 @@ const withBaseLayout = (Page: any) => {
       return (
         <>
           <main>
-            <h1>With Base Layout funciona!</h1>
             <Page {...this.props} />
           </main>
         </>
