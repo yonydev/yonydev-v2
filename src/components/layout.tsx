@@ -9,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "../css/globals.css"
+import "../scss/globals.scss"
 
 interface ILayout {
   children: React.ReactNode;
