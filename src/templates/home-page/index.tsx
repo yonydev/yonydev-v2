@@ -7,12 +7,14 @@ import { withBaseLayout } from "../../layout"
 
 const IndexPageTemplate =  ({ data }: any) => {
   const title = data.markdownRemark
+  const instagram = data.markdownRemark
   return (
     <>
       {/* <SEO title="Home" /> */}
       <Container>
         <div>
           <h1>{title.frontmatter.title}</h1>
+          <h2>{instagram.frontmatter.instagramURL}</h2>
           <div dangerouslySetInnerHTML={{ __html: title.html }} />
         </div>
       </Container>
@@ -26,6 +28,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        instagramURL
       }
     }
   }
