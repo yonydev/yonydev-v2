@@ -1,8 +1,12 @@
 ---
-title: "Home Page"
-date: "2017-08-10"
-description: "Esta es una descripción"
 templateKey: home-page
+date: "29-12-2019"
+title: "Yony Dev"
+githubURL: "https://github.com/yonydev"
+instagramURL: "https://www.instagram.com/yonydev/"
+twitterURL: "https://twitter.com/yony_dev"
+linkedinURL: "https://www.linkedin.com/in/yonydev/"
+mediumURL: "https://medium.com/@yonyrojass"
 ---
 
 Pandas are really sweet.
