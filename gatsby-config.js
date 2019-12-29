@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-typescript",
     "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-netlify-cms",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
