@@ -21,6 +21,7 @@ collections:
           - { label: TemplateKey, name: templateKey, widget: hidden, default: home-page }
           - { label: Fecha, name: date, widget: date, format: "DD-MM-YYYY" }
           - { label: Título, name: title, widget: string }
+          - { label: Descripción, name: description, widget: string }
           - { label: Github URL, name: githubURL, widget: string }
           - { label: Instagram URL, name: instagramURL , widget: string }
           - { label: Twitter URL, name: twitterURL, widget: string }
