@@ -39,7 +39,7 @@ const IndexPageTemplate =  ({ data: homeData }: IHomePageTemplateProps) => {
                 text-center
                 md:text-left
                 lg:text-3xl
-                px-3
+                px-12
                 md:p-0
                 text-white
                 font-karla

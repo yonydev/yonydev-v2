@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { bubble as Hamburger } from "react-burger-menu"
+import { slide as Hamburger } from "react-burger-menu"
 import { Menu, X } from "react-feather"
 import { styles } from "./styles";
 
