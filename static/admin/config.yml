@@ -1,6 +1,9 @@
 backend:
   name: git-gateway # git-gateway for production
   branch: master
+  accept_roles:
+    - admin
+    - editor
   repo: yonydev/yonydev-v2
 
 media_folder: "static/img"
