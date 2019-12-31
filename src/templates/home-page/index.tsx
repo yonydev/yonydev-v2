@@ -4,6 +4,7 @@ import { IHomePageTemplateProps } from "./interfaces/IHomePageTemplateProps"
 import { withBaseLayout } from "../../layout"
 import Container from "../../components/conatiner"
 import React from "react"
+import TextLoop from "react-text-loop"
 import {
   GitHub,
   Instagram,
@@ -33,19 +34,22 @@ const IndexPageTemplate =  ({ data: homeData }: IHomePageTemplateProps) => {
               {frontmatter.title}
             </h1>
             <div className="flex flex-col items-center md:flex-start ml-0 md:ml-8 mt-4">
-              <p className="
-                w-full
-                text-xl
-                text-center
-                md:text-left
-                lg:text-3xl
-                px-12
-                md:p-0
-                text-white
-                font-karla
-                font-bold">
-                {frontmatter.description}
-              </p>
+              <div className="w-full flex justify-center md:justify-start font-karla text-xl lg:text-3xl text-white">
+                <p>a&nbsp;</p>
+                <TextLoop delay={1500}>
+                  {frontmatter.occupation.map((occupation, index) => (
+                    <span key={index} className="font-bold text-surface-700">
+                      {occupation}&nbsp;
+                    </span>
+                  ))}
+                </TextLoop>
+                <p>addicted to&nbsp;</p>
+                <TextLoop delay={1500} interval={1500}>
+                  {frontmatter.emoji.map((emoji, index) => (
+                    <span key={index}>{emoji}</span>
+                  ))}
+                </TextLoop>
+              </div>
               <div className="flex justify-center md:justify-start mt-3 splash-social w-full">
                 <a
                   className="ml-0"
@@ -90,7 +94,8 @@ export const query = graphql`
       html
       frontmatter {
         title
-        description
+        occupation
+        emoji
         githubURL
         instagramURL
         twitterURL

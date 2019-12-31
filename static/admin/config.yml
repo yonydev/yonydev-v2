@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway # git-gateway for production
+  name: test-repo # git-gateway for production
   branch: master
   accept_roles:
     - admin
@@ -24,7 +24,8 @@ collections:
           - { label: TemplateKey, name: templateKey, widget: hidden, default: home-page }
           - { label: Fecha, name: date, widget: date, format: "DD-MM-YYYY" }
           - { label: Título, name: title, widget: string }
-          - { label: Descripción, name: description, widget: string }
+          - { label: Ocupación, name: occupation, widget: list }
+          - { label: Emoji, name: emoji, widget: list }
           - { label: Github URL, name: githubURL, widget: string }
           - { label: Instagram URL, name: instagramURL , widget: string }
           - { label: Twitter URL, name: twitterURL, widget: string }
