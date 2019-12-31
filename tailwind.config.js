@@ -2,6 +2,8 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
+      white: "#FFFFFF",
+      black: "#000000",
       surface: {
         "50":"#909090",
         "100":"#7E7E7E",

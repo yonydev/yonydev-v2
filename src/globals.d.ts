@@ -4,6 +4,7 @@ declare module "*.scss" {
 }
 
 declare module "classnames";
+declare module "react-burger-menu";
 
 declare module "*.svg" {
   const content: any;
