@@ -49,7 +49,7 @@ const IndexPageTemplate =  ({ data: homeData }: IHomePageTemplateProps) => {
               <div className="flex justify-center md:justify-start mt-3 splash-social w-full">
                 <a
                   className="ml-0"
-                  href={frontmatter.linkedinURL}
+                  href={frontmatter.githubURL}
                   target="_blank"
                   rel="noopener noreferrer">
                   <GitHub size={30} className="text-white" />
