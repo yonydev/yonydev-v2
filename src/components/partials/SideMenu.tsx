@@ -5,11 +5,9 @@ import { Menu, X } from "react-feather"
 import { styles } from "./styles";
 
 const SideMenu = () => {
-  const innerWidth = window.innerWidth < 768 ? "100%" : 350
   return (
     <Hamburger
       styles={styles}
-      width={innerWidth}
       customBurgerIcon={<Menu size={32} className="text-surface-500"/>}
       customCrossIcon={<X size={32} className="text-white" />}
       burgerButtonClassName={"text-secondary-500"}>
