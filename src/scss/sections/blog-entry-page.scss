@@ -1,0 +1,22 @@
+.blog-entry {
+  a {
+    color: #F03A47;
+    &:hover {
+      color: #F46F79;
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  p {
+    font-family: 'Karla';
+    color: #2C2C2C;
+    font-size: 18px;
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+}
+
