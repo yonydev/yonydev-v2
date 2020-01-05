@@ -1,5 +1,5 @@
 backend:
-  name: test-repo # git-gateway for production
+  name: git-gateway # git-gateway for production
   branch: master
   accept_roles:
     - admin
