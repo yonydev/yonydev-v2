@@ -14,6 +14,20 @@ slug:
   sanitize_replacement: "-"
 
 collections:
+  - name: blog-entries
+    label: Entradas de Blog
+    folder: /src/pages/blog/
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: TemplateKey, name: templateKey, widget: hidden, default: blog-entry-page }
+      - { label: Fecha, name: date, widget: date, format: "DD-MM-YYYY" }
+      - { label: Título, name: title, widget: string }
+      - { label: Contenido, name: content, widget: markdown }
+      - { label: Timpo de Lectura, name: timeToRead, widget: string }
+
   - name: pages
     label: Páginas
     files:
