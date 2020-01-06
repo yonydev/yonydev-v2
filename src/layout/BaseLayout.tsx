@@ -1,7 +1,8 @@
 import React from "react";
 import "../scss/index.scss"
+import loadable from "@loadable/component"
 
-const SideMenu = React.lazy(() => import("../components/partials/SideMenu"));
+const SideMenu = loadable(() => import("../components/partials/SideMenu"))
 
 const withBaseLayout = (Page: any) => {
   return class extends React.Component<{}, {}> {
@@ -9,9 +10,7 @@ const withBaseLayout = (Page: any) => {
       return (
         <>
           <main>
-            <React.Suspense fallback="">
-              <SideMenu />
-            </React.Suspense>
+            <SideMenu />
             <Page {...this.props} />
           </main>
         </>
