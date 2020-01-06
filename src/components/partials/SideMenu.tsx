@@ -13,9 +13,9 @@ const SideMenu = () => {
       burgerButtonClassName={"text-secondary-500"}>
       <div className="text-white">
         <Link to="/" className="w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">Home</Link>
-        <Link to="#" className="w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">About</Link>
-        <Link to="#" className="w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">Blog</Link>
-        <Link to="#" className="w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">Contact</Link>
+        <Link to="/about" className="hidden w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">About</Link>
+        <Link to="/blog" className="w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">Blog</Link>
+        <Link to="/contact" className="hidden w-full mb-5 text-center hover:text-terciary-300" activeClassName="text-terciary-700">Contact</Link>
       </div>
     </Hamburger>
   );
