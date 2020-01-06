@@ -1,13 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { withBaseLayout } from "../../layout"
 import Container from "../../components/conatiner"
 import { IBlogPageTemplateProps } from "./interfaces/IBlogPageTemplateProps"
+import BlogEntry from "../../components/blogEntry"
 
 const BlogPageTemplate = ({ data: blogData }: IBlogPageTemplateProps) => {
   const { markdownRemark: { frontmatter }, allMarkdownRemark: { edges: blogs } } = blogData;
-  console.log("frontmatter: ", frontmatter);
-  console.log("blogs: ", blogs);
   return (
     <>
       <section className="py-18">
@@ -16,20 +15,17 @@ const BlogPageTemplate = ({ data: blogData }: IBlogPageTemplateProps) => {
             <h2 className="font-bold font-rubik text-surface-500 text-5xl capitalize">
               {frontmatter.title}
             </h2>
-            <div>
+            <div className="mt-10">
               {blogs.map((blog, index) => (
-                <div key={index}>
-                  <Link to={blog.node.fields.slug}>
-                    <h3 className="font-bold font-rubik text-3xl capitalize">
-                      {blog.node.frontmatter.title}
-                    </h3>
-                    <div className="font-karla text-surface-300 flex">
-                      <p>{blog.node.frontmatter.date}&nbsp;&#x02235;</p>
-                      <p>&nbsp;{blog.node.frontmatter.timeToRead}</p>
-                    </div>
-                    <p>{blog.node.frontmatter.description}</p>
-                  </Link>
-                </div>
+                <BlogEntry
+                  key={index}
+                  slug={blog.node.fields.slug}
+                  title={blog.node.frontmatter.title}
+                  date={blog.node.frontmatter.date}
+                  timeToRead={blog.node.frontmatter.timeToRead}
+                  description={blog.node.frontmatter.description}
+                  className="mb-8"
+                />
               ))}
             </div>
           </div>
