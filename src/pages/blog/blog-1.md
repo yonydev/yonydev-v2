@@ -8,6 +8,9 @@ content: >-
 
 
   Mañanita nos vemos para comer algo deli deli.
-  **P.D.** Te va a ir excelente en tu entrevista, de eso estoy seguro 😎😉
+  **P.D.** Te va a ir excelente en tu entrevista, de eso estoy seguro 😎😉, el **gatuchi** de la suerte lo sabe.
+
+
+  ![gatuchi](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 timeToRead: ☕️☕️ 2 min
 ---
