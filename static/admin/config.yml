@@ -45,3 +45,17 @@ collections:
           - { label: Twitter URL, name: twitterURL, widget: string }
           - { label: Linkedin URL, name: linkedinURL, widget: string }
           - { label: Medium URL, name: mediumURL, widget: string }
+
+      - file: src/pages/blog.md
+        label: Blog Page
+        name: blog
+        fields:
+          - { label: TemplateKey, name: templateKey, widget: hidden, default: blog-page }
+          - { label: Fecha, name: date, widget: date, format: "DD-MM-YYYY" }
+          - { label: Título, name: title, widget: string }
+          - label: Frases
+            name: quotes
+            widget: list
+            fields:
+              - { label: Contenido, name: content, widget: string }
+              - { label: Autor, name: author, widget: string }
