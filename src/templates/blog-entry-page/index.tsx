@@ -11,7 +11,7 @@ const BlogEntryTemplate = ({ data: blogEntryData }: IBlogEntryPageTemplateProps)
     <>
       <section className="py-18">
         <Container>
-          <div className="w-full lg:w-8/12 mx-auto text-surface-700">
+          <div className="w-full lg:w-8/12 mx-auto">
             <h2 className="font-bold font-rubik text-surface-500 text-4xl">
               {frontmatter.title}
             </h2>
